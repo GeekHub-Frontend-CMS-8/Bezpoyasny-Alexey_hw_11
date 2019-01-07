@@ -16,10 +16,17 @@ gulp.task('img', function () {
 
 });
 
-gulp.task('font', function () {
-    return gulp.src('app/font/**/*')
-        .pipe(gulp.dest('dist/font'))
+gulp.task('fonts', function () {
+    return gulp.src('app/fonts/**/*')
+        .pipe(gulp.dest('dist/fonts'))
         .pipe(browserSync.reload({stream: true}))
+});
+
+gulp.task('js', function () {
+    return gulp.src('app/js/**/*')
+        .pipe(gulp.dest('dist/js'))
+        .pipe(browserSync.reload({stream: true}))
+
 });
 
 gulp.task("html", function () {
@@ -28,7 +35,7 @@ gulp.task("html", function () {
         .pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task("watch", [ 'sass', "html", 'img', 'font'], function () {
+gulp.task("watch", [ 'sass', "html", 'img', 'fonts', 'js'], function () {
     browserSync.init({
         server: "./dist",
         notify: false,
@@ -39,6 +46,7 @@ gulp.task("watch", [ 'sass', "html", 'img', 'font'], function () {
     gulp.watch('app/sass/**/*.sass', ["sass"]);
     gulp.watch('app/**/*.html' , ['html']);
     gulp.watch('app/img/**/*', ["img"]);
-    gulp.watch('app/font/**/*', ["font"]);
+    gulp.watch('app/fonts/**/*', ["fonts"]);
+    gulp.watch('app/js/**/*', ["js"]);
 
 });
