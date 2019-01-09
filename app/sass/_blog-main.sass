@@ -1,0 +1,55 @@
+.blog
+  padding-top: 85px
+  background-color: $primary-bg-color
+
+  &__text
+    margin: 40px 0 80px 0
+    text-align: center
+
+  &__list
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+
+  &__item
+    display: flex
+    width: 50%
+    min-height: 410px
+    background-color: $second-blog-bg-color
+
+    &--dark
+      background-color: $primary-blog-bg-color
+
+    &:nth-child(3), &:nth-child(4)
+      flex-direction: row-reverse
+
+    &-wrap
+      width: 50%
+
+    &-wrap-text
+      padding: 50px 35px 0 35px
+      text-align: left
+
+    &-img
+      width: 100%
+      float: right
+
+    &-date-and-autor
+      width: 100%
+      max-width: 150px
+      padding-bottom: 10px
+      border-bottom: 1px solid #454545
+      font: 400 italic $tiny-font-size $second-font-family
+      color: $primary-bg-color
+
+    &-title
+      margin: 20px 0 35px 0
+      font: 400 $tiny-font-size $primary-font-family
+      color: $primary-bg-color
+      text-transform: uppercase
+      letter-spacing: 1.47px
+
+    &-text
+      color: $second-text-color
+      line-height: 20px
+      letter-spacing: 1.4px
