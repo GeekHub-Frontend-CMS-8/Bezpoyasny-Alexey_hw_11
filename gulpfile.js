@@ -9,6 +9,12 @@ gulp.task('sass', function () {
         .pipe(browserSync.reload({stream: true}));
 });
 
+gulp.task('css', function () {
+    return gulp.src('app/css/**/*.css')
+        .pipe(gulp.dest('dist/css'))
+        .pipe(browserSync.reload({stream: true}));
+});
+
 gulp.task('img', function () {
     return gulp.src('app/img/**/*')
         .pipe(gulp.dest('dist/img'))
@@ -35,7 +41,7 @@ gulp.task("html", function () {
         .pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task("watch", [ 'sass', "html", 'img', 'fonts', 'js'], function () {
+gulp.task("watch", [ 'sass', 'css', "html", 'img', 'fonts', 'js'], function () {
     browserSync.init({
         server: "./dist",
         notify: false,
@@ -44,6 +50,7 @@ gulp.task("watch", [ 'sass', "html", 'img', 'fonts', 'js'], function () {
         }
     });
     gulp.watch('app/sass/**/*.sass', ["sass"]);
+    gulp.watch('app/css/**/*.css', ["css"]);
     gulp.watch('app/**/*.html' , ['html']);
     gulp.watch('app/img/**/*', ["img"]);
     gulp.watch('app/fonts/**/*', ["fonts"]);
