@@ -11,3 +11,4 @@ $('.testimonials-slick').slick({
     autoplay: false,
     autoplaySpeed: 100,
 });
+

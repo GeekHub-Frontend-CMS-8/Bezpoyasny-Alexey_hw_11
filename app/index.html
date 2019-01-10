@@ -15,9 +15,9 @@
 <body>
 <header class="header">
     <div class="header__wrap container">
-        <div class="header__item">
-            <img class="header__img" src="img/Icon_Logo.png" alt="logo">
-            <h1 class="header__title">ATLANTIDA</h1>
+        <div class="header__item logo">
+            <img class="logo__img" src="img/Icon_Logo.png" alt="logo">
+            <h1 class="logo__title">ATLANTIDA</h1>
         </div>
         <nav class="header__item navigation">
             <ul class="navigation__list">
@@ -34,7 +34,7 @@
                         Services</a>
                 </li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="#">
+                    <a class="navigation__link" href="#history">
                         History</a>
                 </li>
                 <li class="navigation__item">
@@ -197,6 +197,15 @@
                     sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
             </fieldset>
         </div>
+    </div>
+</section>
+<section class="history" id="history">
+    <div class="container">
+        <h2 class="title">HISTORY</h2>
+        <p class="text history__text">In pulvinar, mi at rhoncus condimentum, turpis
+            nisl scelerisque turpis, ut gravida eros tortor non arcu.
+            In eget arcu ante. Curabitur lacinia ultricies ante, eget
+            mattis orci vestibulum sit amet.</p>
     </div>
 </section>
 <section class="team" id="team">
@@ -463,7 +472,8 @@
                     <p class="testimonials-slick__quote-text">
                         <span class="testimonials-slick__quote-quotes">"</span>Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit.Curabitur eu libero ut erat sodales finibus sed in dolor.
-                        Etiam iaculis, nibh a lobortis egestas, est urna sodales<span>"</span>
+                        Etiam iaculis, nibh a lobortis egestas, est urna sodales
+                        <span class="testimonials-slick__quote-quotes">"</span>
                     </p>
                     <cite class="testimonials-slick__quote-caption">
                         <span class="testimonials-slick__quote-autor">
@@ -528,7 +538,68 @@
 </section>
 <section class="footer" id="contact-us">
     <div class="container">
-
+        <div class="logo footer__logo">
+            <img class="logo__img" src="img/Icon_Logo-light.png" alt="logo">
+            <h1 class="logo__title footer__logo-title">ATLANTIDA</h1>
+        </div>
+        <div class="footer__wrap">
+            <div class="footer__contacts">
+                <p class="text footer__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue.
+                    Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor
+                    non aliquam congue. Class aptent taciti sociosqu ad litora torquent
+                    per conubia nostra.
+                </p>
+                <h2 class="footer__title">
+                    ATLANTIDA STUDIO
+                </h2>
+                <address class="footer__address-wrap">
+                    <p class="footer__address text">
+                        Steven Bernson, Attorney at Law
+                        1556 Broadway, suite 416
+                        New York, NY, 10120, USA
+                    </p>
+                    <a class="footer__email" href="mailto:elegantflyers@gmail.com">
+                        E-mail: elegantflyers@gmail.com
+                    </a>
+                    <a class="footer__tel" href="tel:+84 956 654 972">
+                        +84 956 654 972
+                    </a>
+                </address>
+                <div class="social">
+                    <a class="social__link" href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a class="social__link" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="social__link" href="#">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </div>
+            </div>
+            <form class="form footer__form">
+                <ul class="form__list">
+                    <li class="form__item">
+                        <label><input class="form__input" type="text" name="name" placeholder="Name*" required></label>
+                    </li>
+                    <li class="form__item">
+                        <label><input class="form__input" type="email" name="email" placeholder="E-mail*" required></label>
+                    </li>
+                    <li class="form__item">
+                        <label><input class="form__input" type="tel" name="tel" placeholder="Telephone*" required></label>
+                    </li>
+                    <li class="form__item">
+                        <label><input class="form__input" type="text" name="website" placeholder="Website"></label>
+                    </li>
+                    <li class="form__item">
+                        <label><textarea class="form__message" name="message" placeholder="Message"></textarea></label>
+                    </li>
+                </ul>
+                <button class="button form__button" id="button" name="submit">Submit</button>
+            </form>
+        </div>
     </div>
 </section>
 
