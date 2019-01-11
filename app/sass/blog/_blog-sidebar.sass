@@ -1,0 +1,66 @@
+.blog-sidebar
+  padding: 85px 0
+  background-color: $primary-bg-color
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+
+  &__articles
+    width: 100%
+    max-width: 820px
+
+  &__sidebar
+    width: 100%
+    max-width: 300px
+
+  &__title
+    font: 700 $small-font-size $primary-font-family
+    color: $primary-text-color
+    margin: 40px 0 15px 0
+    text-align: left
+    text-transform: uppercase
+    line-height: 18px
+    letter-spacing: 1.81px
+
+  &__time
+    display: block
+    font: 400 italic $extra-small-font-size $second-font-family
+    color: $primary-text-color
+    text-align: left
+
+  &__counter-wrap
+    padding: 10px 0
+    margin: 20px 0 30px 0
+    font: 400 italic $extra-small-font-size $second-font-family
+    color: $second-masonry-blog-color
+    text-align: left
+    border-bottom: 1px solid $second-masonry-blog-color
+    border-top: 1px solid $second-masonry-blog-color
+
+  &__button
+    display: block
+    margin: 30px 0 45px 0
+
+  &__pages-button-wrap
+    display: flex
+    justify-content: center
+    padding-top: 75px
+    border-top: 1px solid $primary-text-color
+
+  &__pages-button
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    max-width: 40px
+    min-height: 40px
+    margin-right: 5px
+    font: 400 italic $extra-small-font-size $second-font-family
+    color: $primary-text-color
+    border: 1px solid $primary-text-color
+    text-decoration: none
+
+    &:hover
+      background-color: $primary-text-color
+      color: #cecece
