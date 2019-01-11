@@ -12,6 +12,8 @@
     font: 400 $tiny-font-size $primary-font-family
     color: $primary-header-text-color
     text-transform: uppercase
+    @media (max-width: 1000px)
+      padding: 0 3px
 
     &:hover
       color: $primary-text-color
@@ -19,10 +21,10 @@
 
 
 .slicknav_menu
-  @media (min-width: 950px)
+  @media (min-width: 860px)
     display: none
 
 #menu
   display: none
-  @media (min-width: 950px)
+  @media (min-width: 860px)
     display: block
