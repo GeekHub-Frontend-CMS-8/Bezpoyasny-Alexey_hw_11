@@ -1,8 +1,11 @@
 .navigation
+
   &__list
     list-style: none
+
   &__item
     display: inline
+
   &__link
     padding: 0 10px
     text-decoration: none
@@ -13,3 +16,13 @@
     &:hover
       color: $primary-text-color
       font-weight: bold
+
+
+.slicknav_menu
+  @media (min-width: 950px)
+    display: none
+
+#menu
+  display: none
+  @media (min-width: 950px)
+    display: block

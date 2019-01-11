@@ -26,7 +26,7 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 40%;
 
     display: block;
 
@@ -43,7 +43,19 @@
     border: none;
     outline: none;
     background: transparent;
+
 }
+
+@media (max-width: 800px) {
+    .slick-prev,
+    .slick-next {
+        top: 20%;
+    }
+    .slick-list {
+        height: 300px;
+    }
+}
+
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
@@ -82,11 +94,11 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 10px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 10px;
     left: auto;
 }
 .slick-prev:before
@@ -100,12 +112,12 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 10px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: 10px;
 }
 .slick-next:before
 {

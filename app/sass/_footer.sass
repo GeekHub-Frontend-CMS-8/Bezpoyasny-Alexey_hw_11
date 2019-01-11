@@ -10,10 +10,15 @@
   &__wrap
     display: flex
     justify-content: space-between
+    @media (max-width: 768px)
+      flex-wrap: wrap
 
   &__contacts
     width: 30%
     text-align: left
+    @media (max-width: 768px)
+      width: 95%
+      margin-bottom: 30px
 
   &__text, &__address
     color: $second-text-color
@@ -39,3 +44,5 @@
 
   &__form
     width: 65%
+    @media (max-width: 768px)
+      width: 100%

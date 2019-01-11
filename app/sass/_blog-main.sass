@@ -16,6 +16,11 @@
     width: 50%
     min-height: 410px
     background-color: $second-blog-bg-color
+    @media (max-width: 1300px)
+      width: 95%
+      margin: 0 auto
+    @media (max-width: 960px)
+      flex-wrap: wrap
 
     &--dark
       background-color: $primary-blog-bg-color
@@ -25,10 +30,19 @@
 
     &-wrap
       width: 50%
+      @media (max-width: 1600px)
+        width: 60%
+      @media (max-width: 960px)
+        width: 100%
 
     &-wrap-text
       padding: 50px 35px 0 35px
       text-align: left
+      @media (max-width: 1600px)
+        padding: 10px 5px 0 10px
+        width: 40%
+      @media (max-width: 960px)
+        width: 100%
 
     &-img
       width: 100%
@@ -41,6 +55,8 @@
       border-bottom: 1px solid #454545
       font: 400 italic $tiny-font-size $second-font-family
       color: $primary-bg-color
+      @media (max-width: 1300px)
+        font-size: $big-font-size
 
     &-title
       margin: 20px 0 35px 0
@@ -48,8 +64,13 @@
       color: $primary-bg-color
       text-transform: uppercase
       letter-spacing: 1.47px
+      @media (max-width: 1300px)
+        font-size: $big-font-size
 
     &-text
       color: $second-text-color
       line-height: 20px
       letter-spacing: 1.4px
+      @media (max-width: 1300px)
+        font-size: $big-font-size
+        line-height: 30px

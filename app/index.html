@@ -9,6 +9,7 @@
           integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
           crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
     <title>ATLANTIDA</title>
 </head>
@@ -20,7 +21,7 @@
             <h1 class="logo__title">ATLANTIDA</h1>
         </div>
         <nav class="header__item navigation">
-            <ul class="navigation__list">
+            <ul class="navigation__list" id="menu">
                 <li class="navigation__item">
                     <a class="navigation__link" href="index.html">
                         Home</a>
@@ -42,7 +43,7 @@
                         Team</a>
                 </li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="#">
+                    <a class="navigation__link" href="#portfolio">
                         Portfolio</a>
                 </li>
                 <li class="navigation__item">
@@ -276,6 +277,33 @@
         </div>
     </div>
 </section>
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <h2 class="title">
+            PORTFOLIO
+        </h2>
+        <p class="text portfolio__text">
+            Nullam lobortis, turpis lobortis placerat vehicula,
+            ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus
+            iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula,
+            ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.
+        </p>
+        <a class="button portfolio__button" href="#">ALL</a>
+        <a class="button portfolio__button" href="#">WEBSITE</a>
+        <a class="button portfolio__button" href="#">BROCHURES</a>
+        <a class="button portfolio__button" href="#">LOGOS</a>
+    </div>
+    <div class="elements-gride portfolio__elements-gride">
+        <img class="element-item portfolio__element-item persent-size portfolio__persent-size" src="img/portfolio-img-1.png" alt="foto1"/>
+        <img class="element-item portfolio__element-item persent-size portfolio__persent-size" src="img/portfolio-img-2.png" alt="foto2"/>
+        <img class="element-item portfolio__element-item persent-size portfolio__persent-size" src="img/portfolio-img-3.png" alt="foto3"/>
+        <img class="element-item portfolio__element-item persent-size portfolio__persent-size" src="img/portfolio-img-4.png" alt="foto4"/>
+        <img class="element-item portfolio__element-item persent-size portfolio__persent-size" src="img/portfolio-img-5.png" alt="foto5"/>
+        <img class="element-item portfolio__element-item persent-size portfolio__persent-size" src="img/portfolio-img-6.png" alt="foto6"/>
+        <img class="element-item portfolio__element-item persent-size portfolio__persent-size" src="img/portfolio-img-7.png" alt="foto7"/>
+        <img class="element-item portfolio__element-item persent-size portfolio__persent-size" src="img/portfolio-img-8.png" alt="foto8"/>
+    </div>
+</section>
 <section class="prices" id="prices">
     <div class="container">
         <h2 class="title">PRICES</h2>
@@ -431,8 +459,6 @@
                 </p>
             </div>
         </div>
-
-
     </div>
 </section>
 <section class="clients">
@@ -493,7 +519,8 @@
                     <p class="testimonials-slick__quote-text">
                         <span class="testimonials-slick__quote-quotes">"</span>Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit.Curabitur eu libero ut erat sodales finibus sed in dolor.
-                        Etiam iaculis, nibh a lobortis egestas, est urna sodales<span>"</span>
+                        Etiam iaculis, nibh a lobortis egestas, est urna sodales
+                        <span class="testimonials-slick__quote-quotes">"</span>
                     </p>
                     <cite class="testimonials-slick__quote-caption">
                         <span class="testimonials-slick__quote-autor">
@@ -513,7 +540,8 @@
                     <p class="testimonials-slick__quote-text">
                         <span class="testimonials-slick__quote-quotes">"</span>Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit.Curabitur eu libero ut erat sodales finibus sed in dolor.
-                        Etiam iaculis, nibh a lobortis egestas, est urna sodales<span>"</span>
+                        Etiam iaculis, nibh a lobortis egestas, est urna sodales
+                        <span class="testimonials-slick__quote-quotes">"</span>
                     </p>
                     <cite class="testimonials-slick__quote-caption">
                         <span class="testimonials-slick__quote-autor">
@@ -606,7 +634,9 @@
 
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
 <script src="js/slick.js"></script>
+<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

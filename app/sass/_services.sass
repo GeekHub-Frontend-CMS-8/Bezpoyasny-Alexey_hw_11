@@ -1,5 +1,5 @@
 .services
-  padding: 70px 0 85px 0
+  padding: 70px 10px 85px 10px
   background: url("../img/services-bg.png") no-repeat center/cover
 
   &__title
@@ -14,11 +14,20 @@
   &__list
     display: flex
     justify-content: space-between
+    @media (max-width: 1000px)
+      flex-wrap: wrap
+    @media (max-width: 530px)
+      justify-content: center
 
   &__item
     width: 23%
     padding: 40px 30px 40px 30px
-    border: 1px solid $primary-services-text-color
+    border: 2px solid $primary-services-text-color
+    @media (max-width: 1000px)
+      width: 48%
+      margin-bottom: 20px
+    @media (max-width: 530px)
+      width: 95%
 
     &-title
       margin-bottom: 30px

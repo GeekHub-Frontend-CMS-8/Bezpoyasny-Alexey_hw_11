@@ -7,11 +7,16 @@
     display: flex
     justify-content: left
     align-items: center
+    @media (max-width: 650px)
+      flex-wrap: wrap
+      justify-content: center
 
   &__img-wrap
     width: 100%
     max-width: 105px
     margin-right: 40px
+    @media (max-width: 650px)
+      margin: 0 0 20px 0
 
   &__img
     width: 100%
@@ -21,6 +26,8 @@
     width: 100%
     max-width: 615px
     text-align: left
+    @media (max-width: 650px)
+      text-align: center
 
   &__title
     font: 700 $small-font-size $primary-font-family
@@ -39,6 +46,8 @@
     color: $primary-bg-color
     background-color: transparent
     border-color: $primary-bg-color
+    @media (max-width: 650px)
+      margin-top: 15px
 
     &:hover
       color: $primary-text-color

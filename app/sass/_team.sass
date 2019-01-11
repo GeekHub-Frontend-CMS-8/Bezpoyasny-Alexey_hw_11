@@ -9,14 +9,19 @@
   &__list
     display: flex
     justify-content: center
+    @media (max-width: 550px)
+      flex-wrap: wrap
 
   &__item
     width: 23%
     position: relative
     margin-right: 3%
+    @media (max-width: 550px)
+      width: 95%
+      margin: 10px 0
 
     &:last-child
-      margin: 0
+      margin-right: 0
 
   &__img
     width: 100%

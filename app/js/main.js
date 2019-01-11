@@ -12,3 +12,15 @@ $('.testimonials-slick').slick({
     autoplaySpeed: 100,
 });
 
+jQuery(document).ready(function($) {
+    $('.elements-gride').masonry({
+        // options
+        itemSelector: '.element-item',
+        columnWidth: '.persent-size',
+        percentPosition: true
+    });
+});
+
+$(function(){
+    $('#menu').slicknav();
+});
