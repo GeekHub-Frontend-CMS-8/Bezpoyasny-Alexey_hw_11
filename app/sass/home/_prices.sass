@@ -1,0 +1,91 @@
+.prices
+  padding-top: 70px
+  background-color: $primary-bg-color
+
+  &__text
+    text-align: center
+    margin: 40px 0 80px 0
+
+  &__list
+    display: flex
+    justify-content: space-between
+    margin-bottom: 90px
+    @media (max-width: 600px)
+      flex-wrap: wrap
+      justify-content: center
+
+  &__item
+    width: 31%
+    padding: 45px 5px 60px 5px
+    background-color: $primary-color
+    @media (max-width: 600px)
+      width: 95%
+      margin-bottom: 25px
+
+    &-img-wrap
+      position: relative
+      margin: 25px auto 35px auto
+      width: 100%
+      max-width: 50px
+      min-height: 50px
+      border: 2px solid $primary-text-color
+      border-radius: 100%
+
+      &-basic
+        background: url("../../img/prices-Icon-1.png") no-repeat center
+
+      &-advanced
+        background: url("../../img/prices-Icon-2.png") no-repeat center
+
+      &-pro
+        background: url("../../img/prices-Icon-3.png") no-repeat center
+
+      &:before
+        content: ''
+        display: inline-block
+        position: absolute
+        top: 50%
+        left: -225%
+        min-width: 100px
+        border: 1px solid $primary-text-color
+        background-color: $primary-text-color
+        @media (max-width: 870px)
+          min-width: 50px
+          left: -118%
+
+      &:after
+        content: ''
+        display: inline-block
+        position: absolute
+        top: 50%
+        left: 100%
+        min-width: 100px
+        border: 1px solid $primary-text-color
+        background-color: $primary-text-color
+        @media (max-width: 8700px)
+          min-width: 50px
+
+    &-title
+      font: 400 $extra-small-font-size $primary-font-family
+      color: $primary-text-color
+
+    &-sum
+      font: 700 70px $primary-font-family
+      color: $primary-text-color
+
+    &-top-index
+      vertical-align: super
+      font-size: 0.5em
+
+    &-text
+      margin: 50px 0
+      padding: 0 105px
+      font: 400 italic $small-font-size $second-font-family
+      color: $primary-text-color
+      line-height: 30px
+      @media (max-width: 1000px)
+        padding: 0 10px
+
+  &__footer
+    width: 100%
+    background-color: #2d2d2f

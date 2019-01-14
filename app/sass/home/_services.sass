@@ -1,0 +1,46 @@
+.services
+  padding: 70px 10px 85px 10px
+  background: url("../../img/services-bg.png") no-repeat center/cover
+
+  &__title
+    background: url("../../img/Line-small-light.png") no-repeat bottom
+    color: $primary-color
+
+  &__text
+    margin: 40px 0 75px 0
+    text-align: center
+    color: #cfcfcf
+
+  &__list
+    display: flex
+    justify-content: space-between
+    @media (max-width: 1000px)
+      flex-wrap: wrap
+    @media (max-width: 530px)
+      justify-content: center
+
+  &__item
+    width: 23%
+    padding: 40px 30px 40px 30px
+    border: 2px solid $primary-services-text-color
+    @media (max-width: 1000px)
+      width: 48%
+      margin-bottom: 20px
+    @media (max-width: 530px)
+      width: 95%
+
+    &-title
+      margin-bottom: 30px
+      padding: 0 40px
+      font-size: $extra-small-font-size
+      color: $primary-services-text-color
+      line-height: 18px
+
+    &-text
+      text-align: center
+      color: $primary-services-text-color
+
+  &__legend
+    padding: 0 30px
+    font-size: 28px
+    color: $primary-services-text-color

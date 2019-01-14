@@ -1,0 +1,37 @@
+.counters
+  display: flex
+  justify-content: center
+  padding: 40px 0 75px 0
+  @media (max-width: 900px)
+    flex-wrap: wrap
+
+  &__item
+    width: 24%
+    padding: 0 90px 0 90px
+    border-right: 1px solid #b0b0b0
+    @media (max-width: 900px)
+      width: 48%
+      padding: 0 45px
+      margin-bottom: 30px
+    @media (max-width: 550px)
+      width: 95%
+      border-bottom: 1px solid #b0b0b0
+      border-right: none
+
+    &:last-child
+      border-right: none
+
+    &:nth-child(2)
+      @media (max-width: 900px)
+        border-right: none
+
+  &__title
+    margin: 20px 0 30px 0
+    font: 700 $extra-small-font-size $primary-font-family
+    color: $primary-text-color
+    text-transform: uppercase
+    letter-spacing: 1.47px
+
+  &__number
+    font: 700 45px $primary-font-family
+    color: $primary-text-color

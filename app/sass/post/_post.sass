@@ -1,0 +1,91 @@
+.post-sidebar
+  padding: 85px 0
+  background-color: $primary-bg-color
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+    @media (max-width: 600px)
+      flex-direction: column
+
+  &__main-content
+    width: 63%
+    @media (max-width: 600px)
+      width: 95%
+
+  &__articles
+    &-img-wrap
+      width: 100%
+
+    &-img
+      width: 100%
+      height: auto
+
+  &__sidebar
+    width: 33%
+    @media (max-width: 600px)
+      width: 95%
+      margin-top: 30px
+      padding-top: 30px
+      border-top: 1px solid $primary-text-color
+
+  &__title
+    font: 700 $small-font-size $primary-font-family
+    color: $primary-text-color
+    margin: 40px 0 15px 0
+    text-align: left
+    text-transform: uppercase
+    line-height: 18px
+    letter-spacing: 1.81px
+
+  &__time
+    display: block
+    font: 400 italic $extra-small-font-size $second-font-family
+    color: $primary-text-color
+    text-align: left
+
+  &__counter-wrap
+    padding: 10px 0
+    margin: 20px 0 30px 0
+    font: 400 italic $extra-small-font-size $second-font-family
+    color: $second-masonry-blog-color
+    text-align: left
+    border-bottom: 1px solid $second-masonry-blog-color
+    border-top: 1px solid $second-masonry-blog-color
+
+  &__text
+    margin-bottom: 30px
+
+    &--border
+      margin-bottom: 55px
+      padding: 65px 60px 65px 45px
+      font: 700 italic $small-font-size $second-font-family
+      color: $primary-text-color
+      border: 2px solid $sidebar-border-color
+      line-height: 25px
+      letter-spacing: 1.6px
+
+  &__social
+    display: flex
+    justify-content: center
+    padding: 20px 0
+    border: 1px solid $sidebar-border-color
+    border-right: none
+    border-left: none
+
+    &-link
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 100%
+      max-width: 30px
+      min-height: 30px
+      margin-right: 5px
+      text-decoration: none
+      color: $primary-text-color
+      border: 1px solid $primary-text-color
+      border-radius: 100%
+
+      &:hover
+        color: $primary-color
+        background-color: $primary-text-color

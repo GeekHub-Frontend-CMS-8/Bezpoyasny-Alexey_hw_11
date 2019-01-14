@@ -1,0 +1,57 @@
+.team
+  padding: 70px 0
+  background: url("../../img/team-bg.png") no-repeat top/cover
+
+  &__text
+    text-align: center
+    margin: 40px 0 55px 0
+
+  &__list
+    display: flex
+    justify-content: center
+    @media (max-width: 550px)
+      flex-wrap: wrap
+
+  &__item
+    width: 23%
+    position: relative
+    margin-right: 3%
+    @media (max-width: 550px)
+      width: 95%
+      margin: 10px 0
+
+    &:last-child
+      margin-right: 0
+
+  &__img
+    width: 100%
+    height: auto
+
+  &__overlay
+    position: absolute
+    top: 2.5%
+    left: 2.5%
+    width: 95%
+    height: 95%
+    padding: 210px 0 0 20px
+    opacity: 0
+    background-color: #f6f6f6
+    text-align: left
+
+    &:hover
+      cursor: pointer
+      opacity: 0.82
+
+    &-name
+      font: 400 $extra-small-font-size $primary-font-family
+      color: $primary-text-color
+    &-position
+      display: block
+      margin: 10px 0
+      font: 400 italic $extra-small-font-size $second-font-family
+      color: $primary-text-color
+    &-line
+      width: 100%
+      max-width: 145px
+      margin-bottom: 20px
+      border: 1px solid #515151
